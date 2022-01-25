@@ -1,0 +1,17 @@
+/* ll */
+.border1 {
+  padding: auto;
+}
+.bag {
+  background-image: url(img2/img-2.jpg);
+}
+.h1 {
+  font-family: "Arvo", serif;
+}
+
+/* dekstop */
+@media (min-width: 992px) {
+  .container1 {
+    margin-top: -20%;
+  }
+}

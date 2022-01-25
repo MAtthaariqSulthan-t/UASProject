@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TANSORTE CAMERASTORE</title>
+    <!-- link boostrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- akhir link boostrap -->
+    <!-- link css -->
+    <link rel="stylesheet" href="css/tambahan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <!-- halaman navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="container-fluid row">
+          <h4 class="text-dark bg-light">TANSORTE. #CAMERA STORE</h4>
+          <button class="navbar-toggler btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bi bi-emoji-laughing-fill"></span>
+          </button>
+          <span class="border1">
+            <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
+              <h4>
+              <div class="navbar-nav">
+                <a class="nav-link active text-dark" aria-current="page" href="" onclick="openpage('index.html');">Home</a>
+                <a class="nav-link text-warning" href="#">Produk</a>
+                <div class="navbar-nav text-dark ms-auto"></div>
+                <a class="nav-link " href="form.html">Daftar Member</a>
+                <a class="nav-link " href="">Checkout(0)</a>
+                <a class="nav-link " href="" data-bs-target="#login" data-bs-toggle="modal">login</a>               
+            </h4>
+            
+              </div>
+              <h1 class="text-secondary text-center p-5 h1" >ABADIKAN #MOMEN INDAHMU</h4>
+            </div>
+
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+    <!-- modal -->
+    <div class="modal" id="login">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+          <div class="modal-title"><h4>Form Login</h4></div>
+        </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="alert alert-warning" role="alert" id="alertw" style="display: none;"></div>
+          <div>
+            <label for="Username" class="form-label">Username</label>
+            <input type="text" class="form-control" name="username" id="username">
+          </div>
+          <div>
+            <label for="" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark text-light" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-warning" onclick="ceklogin()">Login</button>
+      </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir modal -->
+    <!-- baner -->
+    <div class="">
+      <img src="img/mediamodifier-JskqEILt-ds-unsplash.jpg" height="auto" width="1366px" class="container1" alt="" />
+    </div>
+    <!-- akhir baner -->
+    <!-- halaman section -->
+      <!-- kolom samping kiri -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 bg-warning border border-light">
+           <div class="p-5 pt-3 pb-2 mb-3 border border-light">
+              KATEGORI PRODUK
+           </div>
+           <h5><div name="kategori" id="kategori" class="p-4 pt-4 pb-2 mb-3"></div></h5>
+          </div>              
+      <!-- akhir kolom samping kiri -->
+      <!-- tampilkan konten -->
+  <div class="col-9">
+    <main class="">
+      <div class="justify-content-between p-5 pt-3 pb-2 mb-3 border border-dark">
+        <h4 class="">Produk kami</h4>
+      </div>
+        <div class="container mb-4">
+          <div class="row">
+            <div class="col-md-4 pt-3">Camera
+              <div class="text-center">
+                <div class="col-md-12"><img src="img/canon EOS 700D.jpg" alt=""></div>
+                <div class="col-md-12 bg-warning ">Canon EOS 700D</div>
+                <a style="text-decoration: none;" href="detail1.html" class="text-light"><div class="col-md-12 bg-secondary">Detail</div></a>
+              </div>
+            </div>
+            <div class="col-md-4 pt-3">Camera
+              <div class="text-center">
+                <div class="col-md-12"><img src="img/nikon d5600.jpg" alt=""></div>
+                <div class="col-md-12 bg-warning ">Nikon D5600</div>
+                <a style="text-decoration: none;" href="detail2.html" class="text-light"><div class="col-md-12 bg-secondary">Detail</div></a>
+              </div>
+            </div>
+            <div class="col-md-4 pt-3">Drone
+              <div class="text-center">
+                <div class="col-md-12"><img src="img/DJI Spark Fly More Combo.jpg" alt=""></div>
+                <div class="col-md-12 bg-warning ">DJI Spark Fly More Combo</div>
+                <a style="text-decoration: none;" href="detail3.html" class="text-light"><div class="col-md-12 bg-secondary">Detail</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- tampilkan konten disini -->
+      <div id="kontenview"></div>
+    </main>
+  </div>
+  </div>
+</div>
+    <!-- akhir section -->
+    <!-- footer -->
+    <footer">
+    <section class="secondary text-light bg-dark pb-5 pt-3">
+      <p class="text-center">Location <i class="bi bi-heart-fill text-danger"></i><a href="" class="text-white fw-bold " style="text-decoration: none;"> TANSORTE.CameraStore, kel.taman kab.sidoarjo </a></p>
+      <div class="container border border-secondary">
+        <div class="row p-4">
+          <div class="col-md-6">
+            TANSORTE.TANSTORE
+              <div>
+                Contac Us <a style="text-decoration: none;" href="https://api.whatsapp.com/send/?phone=085707240519&text&app_absent=0" class="bi bi-whatsapp text-success"> 085707240519</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            Follow Us Here
+              <div class="row">
+              <div class="col-md-4">Instagram <a style="text-decoration: none;" href="https://www.instagram.com/atth_aariq1/?hl=en" class="bi bi-instagram text-danger"> atth_aariq1</a></div>
+              <div class="col-md-6">Facebook <a style="text-decoration: none;" href="https://www.facebook.com/Sulthan-LibrarySa-109246628296586/?ref=pages_you_manage" class="bi bi-facebook text-primary"> Sulthan Library'Sa</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    </footer>
+    <!-- akhir footer -->
+    <!-- script js -->
+    <script src="javascrip/kategori.js"></script>
+    <script src="javascrip/main.js"></script>
+    <script src="javascrip/modal.js"></script>
+    <!-- akhir script js -->
+  </body>
+</html>
